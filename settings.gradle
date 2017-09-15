@@ -1,0 +1,13 @@
+rootProject.name = 'zhaopin-spring-cloud'
+
+
+include 'eureka'
+rootProject.children.find{ it.name == "eureka" }.name = "eureka-server"
+include 'config'
+rootProject.children.find{ it.name == "config" }.name = "config-server"
+include 'zuul'
+rootProject.children.find{ it.name == 'zuul' }.name = "api-gateway"
+include 'demo'
+rootProject.children.find{ it.name == 'demo' }.name = "demo-service"
+include 'demo2'
+rootProject.children.find{ it.name == 'demo2' }.name = "demo2-service"
