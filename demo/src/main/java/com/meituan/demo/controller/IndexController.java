@@ -24,7 +24,7 @@ public class IndexController {
 
     @GetMapping("/remote")
     public ResponseEntity remote() {
-        return ResponseEntity.ok(String.format("[%s] call remote service! reponse is [%s]", appName,
+        return ResponseEntity.ok(String.format("[%s] call remote service! Response is [%s]", appName,
                 producerFeign.feign(new Random().nextInt()).getBody()));
     }
 

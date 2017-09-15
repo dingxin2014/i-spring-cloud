@@ -1,4 +1,4 @@
-package com.meituan.config;
+package com.meituan.configserver;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
