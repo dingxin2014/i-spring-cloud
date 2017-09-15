@@ -12,7 +12,7 @@
 - Spring Cloud Stream: 通过 Redis、 Rabbit 或者 Ka a 实现的消费微服务， 可以通过 简单的声明式模型来发送和接收消息。
 - SpringCloudAWS: 用千简化整合AmazonWebService的组件。
 - Spring Cloud Security: 安全工具包， 提供在 Zuul 代理中对 0Auth2 客户端请求的中
-- Spring Cloud Sleuth: Spring Cloud 应用的分布式跟踪实现， 可以完美整合 Zip虹n。
+- Spring Cloud Sleuth: Spring Cloud 应用的分布式跟踪实现， 可以完美整合 Zipkin。
 - SpringCloudZooKeeper: 基于ZooKeeper的服务发现与配置管理组件。
 - Spring Cloud Starters: Spring Cloud 的基础组件， 它是基于 Spring Boot 风格项目的
 基础依赖模块。

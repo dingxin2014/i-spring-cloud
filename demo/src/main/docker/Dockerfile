@@ -1,7 +1,6 @@
-FROM java:7
-COPY . /usr/src/myapp
-WORKDIR /usr/src/myapp
-RUN javac Main.java
-CMD ["jar", "-Xmx1024m", "dev-zhaopin.war"]
-
-entrypotint /var/workspace
+# Dockerfile
+FROM java:8u111-jdk
+ADD demo-service-0.0.1-SNAPSHOT.jar /home
+WORKDIR /home
+ENTRYPOINT /home
+CMD ["jar", "-Xmx1024m", "demo--0.0.1-SNAPSHOT.jar"]

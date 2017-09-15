@@ -1,6 +1,7 @@
 package com.meituan.demo.controller;
 
 import com.meituan.demo.remote.ProducerFeign;
+import com.meituan.demo.service.IndexService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.ResponseEntity;
@@ -16,9 +17,12 @@ public class IndexController {
     private String appName;
     @Autowired
     private ProducerFeign producerFeign;
+    @Autowired
+    private IndexService indexService;
 
     @GetMapping("/index")
     public ResponseEntity index() {
+        indexService.test();
         return ResponseEntity.ok(String.format("[%s] Hello World!", appName));
     }
 

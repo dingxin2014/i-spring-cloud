@@ -6,3 +6,19 @@ spring:
       uri: http://localhost:7000/
       username: admin
       password: admin
+
+spring:
+  application:
+    name: demo-service
+  profiles:
+    active: dev
+
+server:
+  port: 8081
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:1111/eureka/
+    healthcheck:
+      enable: true
