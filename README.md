@@ -1,4 +1,4 @@
-# spring cloud demo for zhaopin
+# spring cloud example
 
 ###SpringCloud包含了多个子项目(针对分布式系统中涉及的多个不同开源产品，还可能
 会新增)， 如下所述。

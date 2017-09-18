@@ -1,1 +1,1 @@
-#Configurations file
+#Configuration files

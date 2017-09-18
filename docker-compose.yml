@@ -1,0 +1,18 @@
+version: '2'
+services:
+  eureka-server:
+    image: nginx
+    ports:
+      - "8080:80"
+    volumes:
+      - /opt/conf/:/mnt
+  config-server:
+    image: nginx
+    ports:
+      - "8081:80"
+    volumes:
+      - /opt/conf/:/mnt
+  api-gateway:
+    image: nginx
+    ports:
+      - "8082:80"

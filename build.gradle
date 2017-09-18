@@ -18,8 +18,14 @@ configure(allprojects) { project ->
 
 }
 
+ext {
+	moduleProjects = subprojects.findAll {
+		!it.name.equals('zhaopin-build-src')
+	}
+}
 
-configure(subprojects) { project ->
+
+configure(moduleProjects) { project ->
 
 	println "Current project is ${project.name}"
 
