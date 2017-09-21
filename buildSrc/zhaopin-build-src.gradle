@@ -1,5 +1,6 @@
 description = "Exposes gradle buildSrc for IDE support"
 
+apply plugin: "maven"
 apply plugin: "groovy"
 
 dependencies {
@@ -7,4 +8,16 @@ dependencies {
     compile localGroovy()
 }
 
-configurations.archives.artifacts.clear()
+group = 'com.meituan'
+version = '0.1-SNAPSHOT'
+
+uploadArchives {
+    repositories {
+        mavenDeployer {
+            repository(url: uri('/Users/dingxin/.m2/repository'))
+        }
+    }
+}
+
+
+//configurations.archives.artifacts.clear()

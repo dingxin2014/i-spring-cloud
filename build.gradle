@@ -13,7 +13,6 @@ buildscript {
 }
 
 configure(allprojects) { project ->
-
 	apply plugin: 'idea'
 
 }
@@ -32,6 +31,7 @@ configure(moduleProjects) { project ->
 	apply plugin: 'java'
 	apply plugin: 'eclipse'
 	apply plugin: 'org.springframework.boot'
+//	apply plugin: 'zhaopin.spring.cloud.plugin'
 
 	dependencyManagement {
 		imports {
@@ -47,11 +47,6 @@ configure(moduleProjects) { project ->
 
 	version = '0.0.1-SNAPSHOT'
 	sourceCompatibility = 1.8
-
-	apply plugin: 'java'
-	apply plugin: 'idea'
-	apply plugin: 'eclipse'
-	apply plugin: 'org.springframework.boot'
 
 
 	compileJava {

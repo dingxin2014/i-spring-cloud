@@ -7,7 +7,9 @@ class ZhaopinSpringCloudPlugin implements Plugin<Project> {
 
     @Override
     public void apply(Project project) {
-
+        project.task('testPlugin') << {
+            println 'hello, world!'
+        }
     }
 
 }
