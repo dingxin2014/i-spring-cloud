@@ -17,3 +17,7 @@
 - Spring Cloud Starters: Spring Cloud 的基础组件， 它是基于 Spring Boot 风格项目的
 基础依赖模块。
 - Spring Cloud CLI: 用于在 Groovy 中快速创建 Spring Cloud 应用的 Spring Boot CLI 
+
+#Docker
+- 构建docker镜像 e.g 在 demo 目录下执行 
+  ```docker build -t dingxin/demo:0.1 -f src/main/docker/Dockerfile --build-arg JAR=demo-service-0.0.1-SNAPSHOT .```
