@@ -1,0 +1,6 @@
+com.meituan.zhaopin.gradle.task.DockerRepositoryLoginTask
+com.meituan.zhaopin.gradle.task.DockerPushTask
+com.meituan.zhaopin.gradle.task.DockerTagTask
+com.meituan.zhaopin.gradle.task.DockerBuildImageTask
+com.meituan.zhaopin.gradle.task.DockerDeleteImageTask
+com.meituan.zhaopin.gradle.task.DockerfileMakeTask
