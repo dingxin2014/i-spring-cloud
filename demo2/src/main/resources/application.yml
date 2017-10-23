@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: demo2-service
+  profiles:
+    active: dev
+
+server:
+  port: 8082
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:1111/eureka/
+    healthcheck:
+      enable: true

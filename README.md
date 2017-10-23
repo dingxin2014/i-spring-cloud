@@ -1,9 +1,9 @@
 # spring cloud example
 
-##Gradle
+## Gradle
 - 鉴于BuildSrc中有自定义Gradle插件需要配置Gradle环境和GROOVY环境
 
-##SpringCloud包含了多个子项目(针对分布式系统中涉及的多个不同开源产品，还可能
+## SpringCloud包含了多个子项目(针对分布式系统中涉及的多个不同开源产品，还可能
 会新增)， 如下所述。
 - SpringCloudConfig: 配置管理工具， 支持使用Git存储 配置内容， 可以使用它实现 应用配置的外部化存储， 并支持客户端配置信息刷新、 加密/解密配置内容 等。
 - SpringCloudNetflix: 核心 组件， 对多个Netflix OSS开源套件进行整合。
@@ -21,7 +21,7 @@
 基础依赖模块。
 - Spring Cloud CLI: 用于在 Groovy 中快速创建 Spring Cloud 应用的 Spring Boot CLI 
 
-##Docker
+## Docker
 - 配置Docker环境
 - 构建docker镜像 e.g 在 demo 目录下执行 
   ```docker build -t dingxin/demo:0.1 -f src/main/docker/Dockerfile --build-arg JAR=demo-service-0.0.1-SNAPSHOT .```

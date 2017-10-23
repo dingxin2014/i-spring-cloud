@@ -1,0 +1,29 @@
+spring:
+  application:
+    name: api-gateway
+  profiles:
+    active: dev
+
+
+server:
+  port: 8080
+
+
+#服务中心
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:1111/eureka/
+    healthcheck:
+      enable: true
+
+#路由配置
+zuul:
+  prefix: /api
+  routes:
+    demo-service:
+      path: /demo/**
+      serviceId: demo-service
+    demo2-service:
+      path: /demo2/**
+      serviceId: demo2-service

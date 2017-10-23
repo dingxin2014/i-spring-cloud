@@ -1,0 +1,26 @@
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/dingxin2014/zhaopin-spring-cloud
+          search-paths: configuration
+          username: *****
+          password: *****
+
+server:
+  port: 7000
+
+security.user.name: admin
+security.user.password: admin
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:1111/eureka/
+    healthcheck:
+      enable: true
+
+
